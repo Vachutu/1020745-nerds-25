@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Jennifer Route](https://up.htmlacademy.ru/htmlcss/25/user/1020745).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников] (https://htmlacademy.ru/profile/hulkaton).
 
 ---
 
