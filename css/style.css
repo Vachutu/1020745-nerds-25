@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+.main-header {
+    width: 1440px;
+    background-color: #eeeeee;
+    padding-top: 50px;
+    min-height: 132px;
+    text-transform: uppercase;
+    outline: 1px solid red;
+}
+.container{
+    width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid red;
+    }
+a {
+    text-decoration: none;
+    color: #000000;
+  }
+.site-navigation a:hover,
+.site-navigation a:focus { 
+  text-decoration: none;
+  color: #fb565a;
+}
+.container.nerds-logo a:hover {
+color:#303030
+}
+.main-navigation{
+    font-size: 14px;
+    text-align: right;
+    color: black;
+    outline: 1px solid red;
+}
+.first .page-content {
+    width: 1160px;
+    background-color: #eeeeee;
+    outline: 1px solid red;
+}
+.main-header .container{
+    display: flex;
+    outline: 1px solid red;
+}
+.site-navigation{
+    margin-left: 200px;
+    margin-right: 245px;
+    display: flex;
+    list-style: none;
+    outline: 1px solid red;
+}
+.first{
+    background-color: #eeeeee;
+}
+.first-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nerds-logo{
+    padding-left: 140px;
+}
+.footer-social{
+    list-style: none;
+}
+.footer-social .social-button{
+    padding: 0;
+    margin: 0;
+    color:#cccccc;
+    outline: 1px solid red;
+}
+.services {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 1px solid red;
+}
+.services li{
+    width:350;
+}
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 80px;
+  }
+  .catalog{
+    outline: 1px solid red;
+  }
