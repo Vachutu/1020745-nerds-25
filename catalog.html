@@ -9,22 +9,69 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    
+    
     <header class="main-header">
-      <a href="/"><img alt="nerds-logo" width="160" height="65" src="img/nerds-logo.svg"></a>
-      <nav  class="main-navigation">
-          <ul class="site-navigation">
-              <li><a href="studio">Студия</a></li>
-              <li><a href="customers">Клиенты</a></li>
-              <li class="shop_current">Магазин</li>
-              <li><a href="contacts">Контакты</a></li>
-            </ul>
+      <div class="container">
+          <a class="nerds-logo" href="index.html">Nerds</a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="studio">Студия</a></li>
+          <li><a href="customers">Клиенты</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
+          <li><a href="contacts">Контакты</a></li>
+        </ul>
+        <a class="cart-icon" href="#"><img alt="cart-icon" width="11" height="10" src="img/cart-icon.svg">Корзина</a>
       </nav>
-      <a href="#"><img alt="cart-icon" width="11" height="10" src="img/cart-icon.svg">Корзина</a>
-      <h1>Магазин готовых товаров</h1>
+    </div>
+    <div class="title-page">Добро пожаловать в магазин<br>готовых макетов</div>
+    </div>
+      </div> 
       </header>
       <main>
         <section class="filter">
-          <b>СТОИМОСТЬ</b>
+            <fieldset>
+                <legend>Сетка:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
+                    <label for="filter-shave">Адаптивная</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" >
+                    <label for="filter-care">Фиксированая</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+                    <label for="filter-accessories">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                  <legend>Особенности:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slaider" id="filter-slaider" checked>
+                      <label for="filter-slaider">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blok" id="filter-blok">
+                      <label for="filter-blok">Блок преимуществ</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery" id="filter-galery">
+                      <label for="filter-galery">Галерея</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="box" id="filter-box">
+                      <label for="filter-box">Корзина</label>
+                    </li>
+                  </ul>
+                </fieldset>
         </section>
         <section class="catalog">
           <div class="sort">
@@ -81,15 +128,19 @@
         </section>
     </main>
     <footer>
-        <ul>
-        <!--картинки в браузере не отражаются-->
-          <li><a href="#"><img alt="vk-icon" width="26" height="15" src="img/vk-icon.svg">vk</a></li>
-          <li><a href="#"><img alt="fb-icon" width="26" height="15" src="img/fb-icon.svg">fb</a></li>
-          <li><a href="#"><img alt="insta-icon" width="26" height="15" src="img/insta-icon.svg">in</a></li>
-        </ul>
-        <div>
-          <b>Давайте дружить, ето выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="pages">
+          <ul class="social-icons">
+              <a class="icon-vk" href="https://vk.com/" target="_blank">Vk</a>
+              <a class="icon-facebook" href="https://www.facebook.com/" target="_blank">Fb</a>
+              <a class="icon-instagram" href="https://instagram.com/" target="_blank">Insta</a>
+          </ul>
         </div>
-      </footer>
+           <div class="pages-info">
+            <b class="friendship1">Давайте дружить, ето выгодно!</b>
+            <p class="friendship2">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </footer>
+      </body>
+    </html>
+      
       
