@@ -8,7 +8,6 @@ body {
     color: #000000;
 }
 .main-header {
-    width: 1440px;
     background-color: #eeeeee;
     padding-top: 50px;
     min-height: 132px;
@@ -19,6 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 1160px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     outline: 1px solid red;
@@ -61,48 +61,52 @@ ul.site-navigation li a:active {
 .main-navigation{
     display: flex;
     align-items: center;
-    font-size: 14px;
-    text-align: right;
     color: black;
-    outline: 1px solid red;
 }
 .main-navigation .cart-icon{
-    text-align: center;
-    margin-bottom: 50px;
-    outline: 1px solid red;
-}
-.first .page-content {
-    width: 1160px;
-    background-color: #eeeeee;
-    outline: 1px solid red;
+  text-align: center;
+  outline: 1px solid red;
 }
 .main-header .container{
     display: flex;
     outline: 1px solid red;
 }
+
+
 .site-navigation{
     width: 400px;
-    margin-top: 40px;
+    padding: 0;
+    margin: 0;
     margin-left: 200px;
     margin-right: 245px;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    outline: 1px solid red;
-}
-.sliders{  
- background-color: #eeeeee;
- position: relative ;
- overflow: hidden;
- outline: 1px solid red;
- min-width: 900px;
-}
+  }
+  .first{
+    background-color: #eeeeee;
+  }
+
 .first-slider {
-    background: url(../img/slide-1.png) no-repeat;
-    width:698px;
-    height:413px;
+  min-height:413px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-.first-slider .first-content{
+.first-slider-item{
+  background-repeat: no-repeat;
+  min-height: 415px;
+}
+.first-slider-item.slide-long{
+  background-image:url(../img/slide-1.png)
+}
+.first-slider-item.slide-math{
+  background-image:url(../img/slide-2.png)
+}
+.first-slider-item.slide-hard{
+  background-image:url(../img/slide-3.png)
+}
+.first-slider-item b{
   padding: 19px 0 19px 0;
   font-size: 55px;
   line-height: 36px;
@@ -110,59 +114,17 @@ ul.site-navigation li a:active {
   opacity: 100%;
   color: #000000;
 }
-.first-slider p{
+
+.first-slider-item p{
     font-size: 16px;      
     line-height: 1.5;
     text-align: left;
-    position: absolute;
     opacity: 70%;
     color: #283136
 }
 
-  .second-slider {
-    background: url(../img/slide-2.png) no-repeat ;
-    width:663px;
-    height:430px;
-  }
-  .second-slider .second-content{
-    padding: 19px 0 19px 0;
-    font-size: 55px;
-    line-height: 36px;
-    max-width: 480px;
-    opacity: 100%;
-    color: #000000;
-  }
-  .second-slider p{
-    font-size: 16px;      
-    line-height: 1.5;
-    text-align: left;
-    position: absolute;
-    opacity: 70%;
-    color: #283136
-}
   
-  .third-slider {
-    background: url(../img/slide-3.png) no-repeat ;
-    width:759px;
-    height:411px;
-  }
-  .third-slider .third-content{
-    padding: 19px 0 19px 0;
-    font-size: 55px;
-    line-height: 36px;
-    max-width: 480px;
-    opacity: 100%;
-    color: #000000;
-  }
-  .third-slider p{
-    font-size: 16px;      
-    line-height: 1.5;
-    text-align: left;
-    position: absolute;
-    opacity: 70%;
-    color: #283136
-}
-  .sliders .button{
+  .first-slider .button{
     display: block;
     width: 160px;
     height: 50px;
@@ -374,4 +336,49 @@ font-size: 16px;
 }
 .brand-list li:not(:last-child){
     margin-right: 40px;
+}
+.filter-input-radio + span{
+position: relative;
+padding-left: 36px;
+}
+.filter-input-radio + span::before{
+  content:"";
+  position: absolute;
+  top: calc(50% - (25px / 2));
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 4px solid #b8b8b8;
+  border-radius: 50%;
+}
+.filter-input-radio + span::after{
+  content:"";
+  position: absolute;
+  top: calc(50% - (9px / 2));
+  left: calc(25px / 2 - 9px / 2);
+  display: block;
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color:#b8b8b8;
+  opacity: 0;
+}
+.filter-input-radio:checked + span::after{
+  opacity: 1;
+}
+.card-item{
+  position: relative;
+}
+.card-item .box-hover{
+  position: absolute;
+  bottom: 0;
+  background-color: #eeeeee;
+  display: none;
+}
+.card-item:hover .box-hover, 
+.box-hover:hover{
+  display:block;
 }
